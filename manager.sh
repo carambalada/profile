@@ -32,7 +32,7 @@ _mklink ${BASEDIR}/vim/.vimrc ~/.vimrc
 
 # FONTS
 sed s/main$/"main contrib non-free"/ -i.bak /etc/apt/sources.list
-apt-get -i ttf-mscorefonts-installer xfonts-terminus
+apt-get install ttf-mscorefonts-installer xfonts-terminus
 _mklink ${BASEDIR}/font/fonts.conf ~/.config/fontconfig/fonts.conf
 
 # ZSH
